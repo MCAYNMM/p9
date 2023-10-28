@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="https://i.pinimg.com/originals/1e/c8/f4/1ec8f463568b4cfae39a71b3c1b20abc.png" alt="" style="width:200px; position: relative; top:0; left:0px;" id="a">
+<script>
+    let anh = document.getElementById("a");
+    let vantoc = -10;
+    setInterval(()=>{
+        if( parseInt(anh.style.left)>=window.innerWidth || parseInt(anh.style.left)<=0 ) {
+            vantoc *= -1;
+        }
+
+        anh.style.left = parseInt(anh.style.left) + vantoc + 'px';
+       // if( parseInt(anh.style.left)>=window.innerWidth){
+       //     anh.style.left = '0px';
+       // }
+
+    }, 1)
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" min="1" max="12" id="month" placeholder ="nhap so">
+<button onclick="check()">bam xem</button>
+<p id ="demo"></p>
+<script>
+  let thang_1 = "1";
+  let thang_2 = 2;
+  let thang_3 = "3";
+  let thang_4 = "4";
+  let thang_5 = "5";
+  let thang_6 = "6";
+  let thang_7 = "7";
+  let thang_8 = 8;
+  let thang_9 = "9";
+  let thang_10 = "10";
+  let thang_11 = "11";
+  let thang_12 = "12";
+
+
+  function check(){
+    let so = document.getElementById("month").value;
+    if(so == thang_4 || so == thang_6 || so == thang_9 || so == thang_11){
+      document.getElementById('demo').innerHTML = "tháng " + so +" co 30 ngay"
+    }
+    else if(so == thang_2){
+      document.getElementById('demo').innerHTML = "tháng " + so +" co 28 hoac 29 ngay"
+    }
+    else{
+      document.getElementById("demo").innerHTML = "tháng " + so + "có 31 ngay"
+    }
+  }
+
+
+</script>
+</body>
+</html>
